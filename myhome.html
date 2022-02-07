@@ -12,18 +12,16 @@
 			var form = document.getElementById("form");
 			$(function(){
 				$("#baidu").click(function(){
-					baiduurl = 'https://www.baidu.com/s';
-					$("#search").attr("name","wd");
+					baiduurl = "https://www.baidu.com/s";
+					// $("#search").attr('name','wd');
 					$("#form").attr("action",baiduurl);
 				});
-				
 			});
 			$(function(){
 				$("#google").click(function(){
 					googleurl = 'https://www.google.com/search';
-					$("#search").attr("name","q");
-					$("#form").attr("action",googleurl);
-					alert(googleurl);
+					// $("#search").attr("name",'q');
+					$("#form1").attr("action",googleurl);
 				});
 			});
 			
@@ -52,17 +50,26 @@
 				<!-- 搜索框 -->
 				<div id="search" style="height: 350px;border:1px solid #000;
 				background-color: #e1e1e1;">
-					<form method="get" id="form">
-						<div class="input-group" style="margin-top: 100px;margin-left: 500px;margin-right: 500px;">
-							<span class="input-group-btn">
-								<button id="baidu" class="btn btn-default" type="submit">百度一下</button>
-							</span>
-							<input id="search" type="text" class="form-control" placeholder="Search for..." name="q">
-							<span class="input-group-btn">
-								<button id="google" class="btn btn-default" type="submit">谷歌一下</button>
-							</span>
-						</div><!-- /input-group -->
-					</form>
+					<div class="col-md-6">
+						<form method="get" id="form">
+							<div class="input-group" style="margin-top: 100px;">
+								<input id="search" type="text" class="form-control" placeholder="Search for..." name="wd">
+								<span class="input-group-btn">
+									<button id="baidu" class="btn btn-default" type="submit">百度一下</button>
+								</span>
+							</div><!-- /input-group -->
+						</form>
+					</div>
+					<div class="col-md-6">
+						<form method="get" id="form1">
+							<div class="input-group" style="margin-top: 100px;">
+								<input id="search" type="text" class="form-control" placeholder="Search for..." name="q">
+								<span class="input-group-btn">
+									<button id="google" class="btn btn-default" type="submit">谷歌一下</button>
+								</span>
+							</div><!-- /input-group -->
+						</form>
+					</div>
 				</div>
 				
 				<div class="network" style="margin-top: 10px;">
