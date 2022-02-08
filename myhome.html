@@ -4,6 +4,24 @@
 		<meta charset="utf-8" />
 		<title>HeHome</title>
 		<link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="icon" href="./img/faviconhzy.ico" type="image/x-icon"/>
+		<style type="text/css">
+			.title{
+				margin-left: 20px;
+				color: #3f3f3f;
+				line-height: 1.4;
+				font-weight: 700;
+				background: linear-gradient(to bottom,transparent 60%,rgba(189,202,219,.3) 0) no-repeat;
+				width: auto;
+				display: inline;
+				font-size: 30px;
+			}
+			#search{
+				background-image: url("https://w.wallhaven.cc/full/q2/wallhaven-q2vr8l.jpg");
+				background-size: cover;
+				
+			}
+		</style>
 		<script src="js/jquery.min.js"></script>
 		<script type="text/javascript">
 			var search = document.getElementById("search");
@@ -35,13 +53,13 @@
 			    <a class="navbar-brand" href="#">贺子岩的世界</a>
 			</div>
 			<ul class="nav navbar-nav">
-				<li><a href="https://www.cnblogs.com/java-six/">我的博客</a></li>
-				<li><a href="https://github.com/">github</a></li>
-				<li><a href="https://gitee.com/">gitee</a></li>
-				<li><a href="https://www.bilibili.com/">bilibili</a></li>
-				<li><a href="https://www.zhihu.com/hot">知乎</a></li>
-				<li><a href="https://www.processon.com/">思维导图</a></li>
-				<li><a href="https://fr1lib.org/s/">图书馆</a></li>
+				<li><a href="https://www.cnblogs.com/java-six/" target="_blank|_self|_parent|_top|framename">我的博客</a></li>
+				<li><a href="https://github.com/" target="_blank|_self|_parent|_top|framename">github</a></li>
+				<li><a href="https://gitee.com/" target="_blank|_self|_parent|_top|framename">gitee</a></li>
+				<li><a href="https://www.bilibili.com/" target="_blank|_self|_parent|_top|framename">bilibili</a></li>
+				<li><a href="https://www.zhihu.com/hot" target="_blank|_self|_parent|_top|framename">知乎</a></li>
+				<li><a href="https://www.processon.com/" target="_blank|_self|_parent|_top|framename">思维导图</a></li>
+				<li><a href="https://fr1lib.org/s/" target="_blank|_self|_parent|_top|framename">图书馆</a></li>
 			</ul>
 		</nav>
 		
@@ -51,21 +69,22 @@
 				<div id="search" style="height: 350px;border:1px solid #000;
 				background-color: #e1e1e1;">
 					<div class="col-md-6">
-						<form method="get" id="form">
-							<div class="input-group" style="margin-top: 100px;">
-								<input id="search" type="text" class="form-control" placeholder="Search for..." name="wd">
+						<form method="get" id="form" target="_blank">
+							<div class="input-group" style="margin-top: 150px;margin-left: 260px;">
 								<span class="input-group-btn">
-									<button id="baidu" class="btn btn-default" type="submit">百度一下</button>
+									<button id="baidu" class="btn btn-primary" type="submit">百度一下</button>
 								</span>
+								<input id="sousuo" type="text" class="form-control" placeholder="Search for..." name="wd">
+								
 							</div><!-- /input-group -->
 						</form>
 					</div>
 					<div class="col-md-6">
-						<form method="get" id="form1">
-							<div class="input-group" style="margin-top: 100px;">
-								<input id="search" type="text" class="form-control" placeholder="Search for..." name="q">
+						<form method="get" id="form1" target="_blank">
+							<div class="input-group" style="margin-top: 150px;margin-right: 260px;">
+								<input id="sousuo" type="text" class="form-control" placeholder="Search for..." name="q">
 								<span class="input-group-btn">
-									<button id="google" class="btn btn-default" type="submit">谷歌一下</button>
+									<button id="google" class="btn btn-success" type="submit">谷歌一下</button>
 								</span>
 							</div><!-- /input-group -->
 						</form>
@@ -74,53 +93,53 @@
 				
 				<div class="network" style="margin-top: 10px;">
 					
-					<h1>前端网站</h1>
+					<h1 class="title">前端</h1>
 					
-					<div class="col-md-12">
+					<div class="col-md-12" style="margin-top: 5px;">
 					
 						<div class="col-md-1" style="text-align: center;">
-							<a href="https://www.bootcss.com/" class="thumbnail">
-								<img style="height: 50px;" src="https://fastly.jsdelivr.net/npm/@bootcss/www.bootcss.com@0.0.52/dist/ico/favicon.ico" alt="BootDStrap">
-								<label>BootDStrap</label>
+							<a href="https://www.bootcss.com/" class="thumbnail" target="_blank|_self|_parent|_top|framename">
+								<img style="height: 50px;" src="https://fastly.jsdelivr.net/npm/@bootcss/www.bootcss.com@0.0.52/dist/ico/favicon.ico" alt="BootStrap">
+								<label>BootStrap</label>
 							</a>
 						</div><!--class="col-md-1"-->
 						
 						<div class="col-md-1" style="text-align: center;">
-							<a href="http://layuimini.99php.cn/" class="thumbnail">
+							<a href="http://layuimini.99php.cn/" class="thumbnail" target="_blank|_self|_parent|_top|framename">
 								<img style="height: 50px;" src="img/favicon.ico" alt="layuimini">
 								<label>layuimini</label>
 							</a>
 						</div><!--class="col-md-1"-->
 						
 						<div class="col-md-1" style="text-align: center;">
-							<a href="https://echarts.apache.org/handbook/zh/get-started/" class="thumbnail">
+							<a href="https://echarts.apache.org/handbook/zh/get-started/" class="thumbnail" target="_blank|_self|_parent|_top|framename">
 								<img style="height: 50px;" src="https://cdn.jsdelivr.net/gh/apache/echarts-website@asf-site/zh/images/favicon.png" alt="Apache ECharts">
 								<label>ECharts</label>
 							</a>
 						</div><!--class="col-md-1"-->
 						
 						<div class="col-md-1" style="text-align: center;">
-							<a href="https://www.iconfont.cn/" class="thumbnail">
+							<a href="https://www.iconfont.cn/" class="thumbnail" target="_blank|_self|_parent|_top|framename">
 								<img style="height: 50px;" src="//img.alicdn.com/imgextra/i2/O1CN01ZyAlrn1MwaMhqz36G_!!6000000001499-73-tps-64-64.ico" alt="iconfont">
 								<label>iconfont</label>
 							</a>
 						</div><!--class="col-md-1"-->
 						
 						<div class="col-md-1" style="text-align: center;">
-							<a href="https://ant.design/index-cn" class="thumbnail">
+							<a href="https://ant.design/index-cn" class="thumbnail" target="_blank|_self|_parent|_top|framename">
 								<img style="height: 50px;" src="https://gw.alipayobjects.com/zos/rmsportal/rlpTLlbMzTNYuZGGCVYM.png" alt="Ant Design">
 								<label>Ant Design</label>
 							</a>
 						</div><!--class="col-md-1"-->
 						
 						<div class="col-md-1" style="text-align: center;">
-							<a href="http://amazeui.shopxo.net/" class="thumbnail">
+							<a href="http://amazeui.shopxo.net/" class="thumbnail" target="_blank|_self|_parent|_top|framename">
 								<img style="height: 50px;" src="http://amazeui.shopxo.net/assets/i/app-icon72x72@2x.png" alt="Ant Design">
 								<label>amazeui</label>
 							</a>
 						</div><!--class="col-md-1"-->
 						
-						<div class="col-md-1" style="text-align: center;">
+						<div class="col-md-1" style="text-align: center;" target="_blank|_self|_parent|_top|framename">
 							<a href="https://element.eleme.cn/#/zh-CN" class="thumbnail">
 								<img style="height: 50px;" src="https://element.eleme.cn/favicon.ico" alt="element">
 								<label>element</label>
@@ -128,14 +147,14 @@
 						</div><!--class="col-md-1"-->
 						
 						<div class="col-md-1" style="text-align: center;">
-							<a href="https://www.jsdelivr.com/" class="thumbnail">
+							<a href="https://www.jsdelivr.com/" class="thumbnail" target="_blank|_self|_parent|_top|framename">
 								<img style="height: 50px;" src="https://cdn.jsdelivr.net/www.jsdelivr.com/9d08d41c6d3a827fa3f95a6a74e847bcd74bca98/img/landing/npm.png" alt="jsdelivr">
 								<label>jsdelivr</label>
 							</a>
 						</div><!--class="col-md-1"-->
 						
 						<div class="col-md-1" style="text-align: center;">
-							<a href="https://www.jquery123.com/" class="thumbnail">
+							<a href="https://www.jquery123.com/" class="thumbnail" target="_blank|_self|_parent|_top|framename">
 								<img style="height: 50px;" src="https://www.jquery123.com/assets/images/favicon.ico" alt="jsdelivr">
 								<label>jQuery</label>
 							</a>
@@ -144,40 +163,40 @@
 					</div><!--class="col-md-12"-->
 					<hr/>
 					
-					<h1>石家庄铁道大学</h1>
+					<h1 class="title">石家庄铁道大学</h1>
 					
-					<div class="col-md-12">
+					<div class="col-md-12" style="margin-top: 5px;">
 					
 						<div class="col-md-1" style="text-align: center;">
-							<a href="https://tiedao.vatuu.com/service/login.html" class="thumbnail">
+							<a href="https://tiedao.vatuu.com/service/login.html" class="thumbnail" target="_blank|_self|_parent|_top|framename">
 								<img style="height: 50px;" src="https://imgsa.baidu.com/forum/pic/item/43166d224f4a20a4800c679a97529822720ed059.jpg" alt="为途">
 								<label>为途</label>
 							</a>
 						</div><!--class="col-md-1"-->
 						
 						<div class="col-md-1" style="text-align: center;">
-							<a href="https://passport2.chaoxing.com/login" class="thumbnail">
+							<a href="https://passport2.chaoxing.com/login" class="thumbnail" target="_blank|_self|_parent|_top|framename">
 								<img style="height: 50px;" src="https://imgsa.baidu.com/forum/pic/item/43166d224f4a20a4800c679a97529822720ed059.jpg" alt="学习通">
 								<label>学习通</label>
 							</a>
 						</div><!--class="col-md-1"-->
 						
 						<div class="col-md-1" style="text-align: center;">
-							<a href="https://webvpn.stdu.edu.cn/login" class="thumbnail">
+							<a href="https://webvpn.stdu.edu.cn/login" class="thumbnail" target="_blank|_self|_parent|_top|framename">
 								<img style="height: 50px;" src="https://imgsa.baidu.com/forum/pic/item/43166d224f4a20a4800c679a97529822720ed059.jpg" alt="WebVpn">
 								<label>WebVpn</label>
 							</a>
 						</div><!--class="col-md-1"-->
 						
 						<div class="col-md-1" style="text-align: center;">
-							<a href="https://webvpn.stdu.edu.cn/http/77726476706e69737468656265737421a1ae13d27666301e2f5cc7fdcf06/jwxt/login.jsp" class="thumbnail">
+							<a href="https://webvpn.stdu.edu.cn/http/77726476706e69737468656265737421a1ae13d27666301e2f5cc7fdcf06/jwxt/login.jsp" class="thumbnail" target="_blank|_self|_parent|_top|framename">
 								<img style="height: 50px;" src="https://imgsa.baidu.com/forum/pic/item/43166d224f4a20a4800c679a97529822720ed059.jpg" alt="教辅系统">
 								<label>教辅系统</label>
 							</a>
 						</div><!--class="col-md-1"-->
 						
 						<div class="col-md-1" style="text-align: center;">
-							<a href="https://www.xgxt.stdu.edu.cn/" class="thumbnail">
+							<a href="https://www.xgxt.stdu.edu.cn/" class="thumbnail" target="_blank|_self|_parent|_top|framename">
 								<img style="height: 50px;" src="https://www.xgxt.stdu.edu.cn/static/img/favicon.png" alt="易班">
 								<label>易班</label>
 							</a>
